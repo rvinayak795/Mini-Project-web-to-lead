@@ -23,6 +23,6 @@ function timestamp() {
  } 
  setInterval(timestamp, 500); 
 
- function captchachecked(){
+ function captchasuccess(){
     captchaChecked = true;
  }

@@ -6,4 +6,3 @@ let formattedDate = new Date(inputdate.value).toLocaleDateString("en-US");
 console.log('formattedDate',formattedDate);
 outputdate.value = formattedDate;
 }
-console.log('Testing Push');

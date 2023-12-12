@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web To Lead Form</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
     
     <h1>Create Lead</h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000DhaVO" method="POST" onsubmit="beforeSubmit()">
-    
+    <input type=hidden name='captcha_settings' value='{"keyname":"web_to_lead","fallback":"true","orgId":"00D5g00000DhaVO","ts":""}'>
     <input type="hidden" name="oid" value="00D5g00000DhaVO" >
     <input type="hidden" name="retURL" value="https://rvinayak795.github.io/Mini-Project-web-to-lead/thanks.html"> 
     <input type="hidden" name="RoundRobinVR__Lead_Date__c" class="outputdate">
@@ -31,6 +32,7 @@
            type="text" />
     </span><br>
     -->
+    <div class="g-recaptcha" data-sitekey="6Lc5VS8pAAAAADQ6rFMHkeeZpBIuzYfUPKX4jfcp"></div><br>
     <input type="submit" name="submit" class="submit">
     
     </form>

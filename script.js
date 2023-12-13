@@ -25,4 +25,5 @@ function timestamp() {
 
  function captchasuccess(){
     captchaChecked = true;
+    console.log('captcha checked');
  }
